@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { View, FlatList, Image, Text, TouchableOpacity, SafeAreaView, Linking  } from 'react-native'
 
+import NavBar from '../../components/navBar'
 
 import styles from './styles'
 
@@ -196,10 +197,9 @@ const DataBase = [
 ]
 
 
-export default function Incidents() {
+export default function Learning() {
     const [actualTab, setActualTab] = useState('Finanças')
     const [db, setDb] = useState(DataBase[0])
-    const [tabSelected, setTabSelected] = useState("")
 
     function changeTab(tab) {
         switch (tab) {
@@ -240,18 +240,15 @@ export default function Incidents() {
                 <FlatList
                     style = {styles.tabsContent}
                     horizontal= {true}
-                    
                     data={Tabs}
                     keyExtractor={item => item.id.toString()}
-                    contentContainerStyle={{flexGrow: 1, justifyContent: 'space-between'}}
-                    extraData={tabSelected}
-                    
+                    contentContainerStyle={{flexGrow: 1, justifyContent: 'space-between'}}                    
                     renderItem={({ item:tabs }) => (
                         <TouchableOpacity 
                         style={styles.tabsBtn} 
-                        onPress={() => {changeTab(tabs.title); setTabSelected(tabs.id)} } 
+                        onPress={() => {changeTab(tabs.title)} } 
                         >
-                            <Text style={[styles.tabsBtnText, tabSelected == tabs.id && styles.tabsBtnTextSelected]}>
+                            <Text style={[styles.tabsBtnText, actualTab == tabs.title && styles.tabsBtnTextSelected]}>
                                 { tabs.title }
                             </Text>
                         </TouchableOpacity>
@@ -266,7 +263,7 @@ export default function Incidents() {
                     horizontal
                     showsHorizontalScrollIndicator={false}
                     snapToAlignment={"center"} 
-                    snapToInterval={400}
+                    snapToInterval={405}
                     decelerationRate={"normal"}
                     pagingEnabled
                     data={db}
@@ -280,12 +277,9 @@ export default function Incidents() {
                                 </View>                               
 
                                 <View style={styles.cardContent}>
-                                    <Text style={styles.cardTitle}>{card.title}</Text>
-                                    
-                                    {showIcon(card)}
-                                    
-                                </View>
-                                
+                                    <Text style={styles.cardTitle}>{card.title}</Text>                                    
+                                    {showIcon(card)}                                    
+                                </View>                                
 
                                 <TouchableOpacity 
                                     style={styles.accessCard}
@@ -296,7 +290,8 @@ export default function Incidents() {
                         )}
                 />
             </SafeAreaView>
-
+            
+            <View style={styles.navBar} ><NavBar page={2}/></View>
         </View>
     )
 }

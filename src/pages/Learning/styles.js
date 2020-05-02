@@ -145,6 +145,18 @@ export default StyleSheet.create({
         marginTop: 20,
         width: 100,
         height: 100,
+      },
+
+      navBar: {
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: 0,
+          
+        //   alignSelf: 'flex-end',
+        //   justifyContent: 'flex-end',
+        //   alignItems: 'flex-end',
+        //   alignContent: 'flex-end'
       }
 
 })
