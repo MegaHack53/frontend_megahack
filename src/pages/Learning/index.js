@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { View, FlatList, Image, Text, TouchableOpacity, SafeAreaView } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
-import { Feather } from '@expo/vector-icons'
-import Constants from 'expo-constants';
+import React, { useState } from 'react'
+import { View, FlatList, Image, Text, TouchableOpacity, SafeAreaView, Linking  } from 'react-native'
 
 
 import styles from './styles'
@@ -48,7 +45,103 @@ const DataBase = [
                 title: 'Como Ganhar Dinheiro Investindo 100 Reais Todo Mês',
                 description: 'Você sabia que é possível ganhar dinheiro investindo R$ 100 todos os meses? Ao mesmo tempo, conseguir ganhar dinheiro investindo ...',
                 url: 'https://blog.rico.com.vc/ganhar-dinheiro-investindo-100-reais'
-            }
+            },
+            {
+                id: 4,
+                author: 'PAULO AMORIM',
+                readtime: '7 min',
+                title: 'Se você AINDA tem dinheiro na poupança, precisa saber isto',
+                description: 'Uma dúvida ainda muito comum entre os brasileiros, principalmente em momentos de crise, é se vale a pena...',
+                url: 'https://fdr.com.br/2020/03/29/poupanca-ainda-e-um-bom-investimento-entenda-aqui/'
+            },
+            {
+                id: 5,
+                author: 'INFOMONEY',
+                readtime: '10 min',
+                title: 'O que é CDI e como afeta os investimentos',
+                description: 'Entre as inúmeras siglas que rondam o mercado financeiro, o CDI está entre as mais famosas. E como há outras muito parecidas com ela...',
+                url: 'https://www.infomoney.com.br/guias/cdi/'
+            },
+            {
+                id: 6,
+                author: 'THIAGO NIGRO',
+                readtime: '8 min',
+                title: 'Como Ganhar Dinheiro Investindo 100 Reais Todo Mês',
+                description: 'Você sabia que é possível ganhar dinheiro investindo R$ 100 todos os meses? Ao mesmo tempo, conseguir ganhar dinheiro investindo ...',
+                url: 'https://blog.rico.com.vc/ganhar-dinheiro-investindo-100-reais'
+            },
+            {
+                id: 7,
+                author: 'PAULO AMORIM',
+                readtime: '7 min',
+                title: 'Se você AINDA tem dinheiro na poupança, precisa saber isto',
+                description: 'Uma dúvida ainda muito comum entre os brasileiros, principalmente em momentos de crise, é se vale a pena...',
+                url: 'https://fdr.com.br/2020/03/29/poupanca-ainda-e-um-bom-investimento-entenda-aqui/'
+            },
+            {
+                id: 8,
+                author: 'INFOMONEY',
+                readtime: '10 min',
+                title: 'O que é CDI e como afeta os investimentos',
+                description: 'Entre as inúmeras siglas que rondam o mercado financeiro, o CDI está entre as mais famosas. E como há outras muito parecidas com ela...',
+                url: 'https://www.infomoney.com.br/guias/cdi/'
+            },
+            {
+                id: 9,
+                author: 'THIAGO NIGRO',
+                readtime: '8 min',
+                title: 'Como Ganhar Dinheiro Investindo 100 Reais Todo Mês',
+                description: 'Você sabia que é possível ganhar dinheiro investindo R$ 100 todos os meses? Ao mesmo tempo, conseguir ganhar dinheiro investindo ...',
+                url: 'https://blog.rico.com.vc/ganhar-dinheiro-investindo-100-reais'
+            },
+            {
+                id: 10,
+                author: 'PAULO AMORIM',
+                readtime: '7 min',
+                title: 'Se você AINDA tem dinheiro na poupança, precisa saber isto',
+                description: 'Uma dúvida ainda muito comum entre os brasileiros, principalmente em momentos de crise, é se vale a pena...',
+                url: 'https://fdr.com.br/2020/03/29/poupanca-ainda-e-um-bom-investimento-entenda-aqui/'
+            },
+            {
+                id:11,
+                author: 'INFOMONEY',
+                readtime: '10 min',
+                title: 'O que é CDI e como afeta os investimentos',
+                description: 'Entre as inúmeras siglas que rondam o mercado financeiro, o CDI está entre as mais famosas. E como há outras muito parecidas com ela...',
+                url: 'https://www.infomoney.com.br/guias/cdi/'
+            },
+            {
+                id: 12,
+                author: 'THIAGO NIGRO',
+                readtime: '8 min',
+                title: 'Como Ganhar Dinheiro Investindo 100 Reais Todo Mês',
+                description: 'Você sabia que é possível ganhar dinheiro investindo R$ 100 todos os meses? Ao mesmo tempo, conseguir ganhar dinheiro investindo ...',
+                url: 'https://blog.rico.com.vc/ganhar-dinheiro-investindo-100-reais'
+            },
+            {
+                id: 13,
+                author: 'PAULO AMORIM',
+                readtime: '7 min',
+                title: 'Se você AINDA tem dinheiro na poupança, precisa saber isto',
+                description: 'Uma dúvida ainda muito comum entre os brasileiros, principalmente em momentos de crise, é se vale a pena...',
+                url: 'https://fdr.com.br/2020/03/29/poupanca-ainda-e-um-bom-investimento-entenda-aqui/'
+            },
+            {
+                id: 14,
+                author: 'INFOMONEY',
+                readtime: '10 min',
+                title: 'O que é CDI e como afeta os investimentos',
+                description: 'Entre as inúmeras siglas que rondam o mercado financeiro, o CDI está entre as mais famosas. E como há outras muito parecidas com ela...',
+                url: 'https://www.infomoney.com.br/guias/cdi/'
+            },
+            {
+                id: 15,
+                author: 'THIAGO NIGRO',
+                readtime: '8 min',
+                title: 'Como Ganhar Dinheiro Investindo 100 Reais Todo Mês',
+                description: 'Você sabia que é possível ganhar dinheiro investindo R$ 100 todos os meses? Ao mesmo tempo, conseguir ganhar dinheiro investindo ...',
+                url: 'https://blog.rico.com.vc/ganhar-dinheiro-investindo-100-reais'
+            },
     ]
     ,
     // CardsHabits
@@ -83,49 +176,60 @@ const DataBase = [
             id: 1,
             author: 'MEUS DIVIDENDOS',
             title: 'Cálculo de Dividendos',
-            icon: 'https://image.flaticon.com/icons/svg/584/584093.svg',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/economic-improvement.png',
             url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/Mixed'
         },
         {
             id: 2,
             author: 'MELHOR CÂMBIO',
             title: 'Conversor de Moedas',
-            icon: 'https://image.flaticon.com/icons/svg/631/631180.svg',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/currency-exchange.png',
             url: 'https://www.melhorcambio.com/conversor-de-moeda'
         },
         {
             id: 3,
             author: 'ME POUPE',
             title: 'Simulador de CDB e Letras de Crédito',
-            icon: 'https://image.flaticon.com/icons/svg/584/584074.svg',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/accounting.png',
             url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/'
         }],
 ]
 
 
 export default function Incidents() {
-
-    let actualTab = 'Finanças'
-    let db = DataBase[0]
+    const [actualTab, setActualTab] = useState('Finanças')
+    const [db, setDb] = useState(DataBase[0])
+    const [tabSelected, setTabSelected] = useState("")
 
     function changeTab(tab) {
         switch (tab) {
             case Tabs[1].title :
-                actualTab = Tabs[1].title 
-                db = DataBase[1]
+                setActualTab(Tabs[1].title)
+                setDb(DataBase[1])
                 break;
             case Tabs[2].title :
-                actualTab = Tabs[2].title 
-                db = DataBase[2]
+                setActualTab(Tabs[2].title)
+                setDb(DataBase[2])
                 break;  
             default:
-                actualTab = Tabs[0].title 
-                db = DataBase[0]
+                setActualTab(Tabs[0].title)
+                setDb(DataBase[0])
         }            
     }
 
+    function showIcon(card) {
+        if (card.icon) {
+            return <Image style={styles.carIcon} source={{uri: card.icon }}/>
+        } else {
+            return <Text style={styles.cardDescription}>{card.description}</Text>  
+            
+        }
+    }
+
+
     return (
         <View style={styles.container}>
+
              <View style={styles.header}>
                 <Text style={styles.headerText}>
                     Pílulas de Conhecimento
@@ -135,31 +239,38 @@ export default function Incidents() {
             <SafeAreaView style= {styles.tabsContainer}>                
                 <FlatList
                     style = {styles.tabsContent}
-                    horizontal
+                    horizontal= {true}
+                    
                     data={Tabs}
                     keyExtractor={item => item.id.toString()}
-                    contentContainerStyle={
-                        {flexGrow: 1, justifyContent: 'space-between'}}
+                    contentContainerStyle={{flexGrow: 1, justifyContent: 'space-between'}}
+                    extraData={tabSelected}
+                    
                     renderItem={({ item:tabs }) => (
-                            <TouchableOpacity 
-                                style={styles.tabsBtn} 
-                                onPress={() => changeTab(tabs.title) } 
-                            >
-                                <Text style={styles.tabsBtnText}>
-                                    { tabs.title }
-                                </Text>
-                            </TouchableOpacity>
-                        )}
-                />
+                        <TouchableOpacity 
+                        style={styles.tabsBtn} 
+                        onPress={() => {changeTab(tabs.title); setTabSelected(tabs.id)} } 
+                        >
+                            <Text style={[styles.tabsBtnText, tabSelected == tabs.id && styles.tabsBtnTextSelected]}>
+                                { tabs.title }
+                            </Text>
+                        </TouchableOpacity>
+                    )}
+
+                        />
             </SafeAreaView>
 
             <SafeAreaView style={styles.cardsContainer}>
             <FlatList
                     style = {styles.cardsList}
                     horizontal
+                    showsHorizontalScrollIndicator={false}
+                    snapToAlignment={"center"} 
+                    snapToInterval={400}
+                    decelerationRate={"normal"}
+                    pagingEnabled
                     data={db}
                     keyExtractor={item => item.id.toString()}
-                    // contentContainerStyle={{flexGrow: 0, justifyContent: 'space-between'}}
                     renderItem={({ item:card }) => (
                             <View style={styles.card}>
 
@@ -170,11 +281,15 @@ export default function Incidents() {
 
                                 <View style={styles.cardContent}>
                                     <Text style={styles.cardTitle}>{card.title}</Text>
-                                    <Text style={styles.cardDescription}>{card.description}</Text>
+                                    
+                                    {showIcon(card)}
+                                    
                                 </View>
                                 
 
-                                <TouchableOpacity style={styles.accessCard}>
+                                <TouchableOpacity 
+                                    style={styles.accessCard}
+                                    onPress={() => Linking.openURL(card.url)}>
                                     <Text style={styles.accessCardText}>Acessar</Text>
                                 </TouchableOpacity>
                             </View>

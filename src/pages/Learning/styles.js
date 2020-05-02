@@ -6,7 +6,7 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 20,
+        paddingTop: Constants.statusBarHeight + 40,
         backgroundColor: '#CFD8DC'
     },
 
@@ -22,14 +22,10 @@ export default StyleSheet.create({
         color: '#012940',
     },
 
-    headerTextBold: {
-        fontWeight: 'bold',
-    },
-
     tabsBtn: {
         padding: 10,
-        marginTop: 14,
-        marginBottom: 24
+        marginTop: 40,
+        marginBottom: 40
     },
 
     tabsBtnText: {
@@ -38,12 +34,19 @@ export default StyleSheet.create({
         color: '#012940'
     },
 
+    tabsBtnTextSelected: {
+        fontFamily: 'Roboto',
+        fontSize: 32,
+        color: '#FFF'
+    },
+
     cardsList: {
-        height: '70%',
+        height: '60%',
     },
 
     card: {
-        width: '37%',
+        width: 390,
+        marginRight: 15,
         height: '100%',
         backgroundColor: '#FFF',        
         padding: 24,
@@ -52,7 +55,7 @@ export default StyleSheet.create({
     },
 
     cardHeader: {
-        top: '5%',
+        top: '10%',
     },
 
     cardAuthor: {
@@ -69,6 +72,7 @@ export default StyleSheet.create({
     },
 
     cardReadTime: {
+        margin: 5,
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: '500',
@@ -80,61 +84,67 @@ export default StyleSheet.create({
     },
 
     cardContent: {
-        top: '5%',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     
-    cardTitle: {
-        justifyContent: 'center',
-        alignContent: 'center',
-        alignSelf: 'center',
-        alignItems: 'center',
-        textAlignVertical: 'center',
-        
+    cardTitle: {        
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: '500',
         fontSize: 32,
-        lineHeight: 35,
+        lineHeight: 41,
         letterSpacing: -0.24,
         
         textAlign: 'center',
-        justifyContent: 'center',
-        alignItems: 'center',
 
         color: '#012940',
     },
 
 
     cardDescription: {
+        padding: 20,
+
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: '300',
         fontSize: 16,
-        lineHeight: 16,
+        lineHeight: 22,
+        letterSpacing: 0.5,
         
-        textAlign: 'center',
-        textTransform: 'uppercase',
+        textAlign: 'justify',
+
         
-        color: '#012940',
+        color: '#697983',
     },
 
     accessCard: {
-        top: '5%',
-        bottom: '5%',
+        bottom: '10%',
     },
 
     accessCardText: {
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: '300',
-        fontSize: 16,
-        lineHeight: 16,
+        fontSize: 18,
+        lineHeight: 20,
         
         textAlign: 'center',
         textTransform: 'uppercase',
         
+        padding:10,
+        borderStyle: 'solid',
+        borderColor: '#568EA6',
+        borderWidth: 1,
+	    borderRadius:5,
         color: '#012940',
     },
-
+    
+    carIcon: {
+        // display: 'none',
+        marginTop: 20,
+        width: 100,
+        height: 100,
+      }
 
 })
