@@ -12,7 +12,7 @@ export default function Routes() {
         <NavigationContainer >
 
             <AppStack.Navigator screenOptions={{ headerShown: false}}>
-                <AppStack.Screen name='Aprender' component={Learning} />
+                <AppStack.Screen name='Learning' component={Learning} />
             </AppStack.Navigator>
 
         </NavigationContainer>
