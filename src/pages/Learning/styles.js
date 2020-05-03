@@ -6,7 +6,7 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 40,
+        paddingTop: Constants.statusBarHeight + 20,
         backgroundColor: '#CFD8DC'
     },
 
@@ -152,11 +152,6 @@ export default StyleSheet.create({
           left: 0,
           right: 0,
           bottom: 0,
-          
-        //   alignSelf: 'flex-end',
-        //   justifyContent: 'flex-end',
-        //   alignItems: 'flex-end',
-        //   alignContent: 'flex-end'
       }
 
 })

@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native'
-import Constants from 'expo-constants'
 
 export default StyleSheet.create({
     navBarContent: {
       flexDirection: 'row',
       justifyContent: 'space-between',
+      marginRight: 10,
+      marginLeft: 10
     },
     
     
@@ -13,6 +14,7 @@ export default StyleSheet.create({
       width: 90,
       height: 90,
       borderRadius: 30/2,
+     
       
       alignItems: 'center',
       justifyContent: 'center'
@@ -25,11 +27,11 @@ export default StyleSheet.create({
     },
     
     navBarSelected: {
-      bottom: 30,
+      bottom: 20,
       width: 90,
       height: 90,
       borderRadius: 90/2,
-      backgroundColor: '#305F72',
+      backgroundColor: '#305F72DD',
       
       alignItems: 'center',
       justifyContent: 'center'
@@ -45,7 +47,8 @@ export default StyleSheet.create({
 
     navBarIcons: {
       height: 50,
-      width: 50
+      width: 50,
+      alignSelf: 'center',
     },
     
     navBarLabelSelected: {
