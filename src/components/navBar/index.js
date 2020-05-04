@@ -13,19 +13,19 @@ export default function NavBar(props) {
   function generateButton(iconUrl, name, page) {
     if (actualPage == page) {
       return <View style={styles.navBarBtn}>
-        <Image style={styles.navBarIcons} source={{uri: iconUrl }}/>
-        <Text  style={styles.navBarLabelSelected}>{name}</Text>
+        <Image style={styles.navBarIcons} source={{ uri: iconUrl }} />
+        <Text style={styles.navBarLabelSelected}>{name}</Text>
       </View>
     } else {
       return <View style={styles.navBarBtn}>
-        <Image style={styles.navBarIcons} source={{uri: iconUrl }}/>
-        <Text style={styles.navBarLabel }>{name}</Text>
+        <Image style={styles.navBarIcons} source={{ uri: iconUrl }} />
+        <Text style={styles.navBarLabel}>{name}</Text>
       </View>
     }
   }
 
   function navigateTo(screenName) {
-      navigation.navigate(screenName)
+    navigation.navigate(screenName)
   }
 
   return (
@@ -35,48 +35,47 @@ export default function NavBar(props) {
 
       <View style={styles.navBarContent}>
 
-          <TouchableOpacity 
-            style={[styles.navBarItems, actualPage == 1 && styles.navBarSelected]}
-            onPress={() => null}
-            // onPress={() => navigateTo('Wallet')}
-            >
-            {generateButton('https://img.icons8.com/carbon-copy/100/000000/initiate-money-transfer.png', 'Carteira', 1)}
-          </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.navBarItems, actualPage == 1 && styles.navBarSelected]}
+          onPress={() => null}
+        // onPress={() => navigateTo('Wallet')}
+        >
+          {generateButton('https://img.icons8.com/carbon-copy/100/000000/initiate-money-transfer.png', 'Carteira', 1)}
+        </TouchableOpacity>
 
-          <TouchableOpacity 
-            style={[styles.navBarItems, actualPage == 2 && styles.navBarSelected]}
-            onPress={() => navigateTo('Learning')}
-            >
-            {generateButton('https://img.icons8.com/carbon-copy/100/000000/classroom.png', 'Aprender', 2)}
-          </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.navBarItems, actualPage == 2 && styles.navBarSelected]}
+          onPress={() => navigateTo('Learning')}
+        >
+          {generateButton('https://img.icons8.com/carbon-copy/100/000000/classroom.png', 'Aprender', 2)}
+        </TouchableOpacity>
 
-          <TouchableOpacity 
-            style={[styles.navBarItems, actualPage == 3 && styles.navBarSelected]}
-            onPress={() => null}
-            // onPress={() => navigateTo('Savings')}
-            >
-            {generateButton('https://img.icons8.com/wired/64/000000/love-for-money.png', 'Resumo', 3)}
-          </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.navBarItems, actualPage == 3 && styles.navBarSelected]}
+          onPress={() => navigateTo('Savings')}
+        >
+          {generateButton('https://img.icons8.com/wired/64/000000/love-for-money.png', 'Resumo', 3)}
+        </TouchableOpacity>
 
-          <TouchableOpacity 
-            style={[styles.navBarItems, actualPage == 4 && styles.navBarSelected]}
-            onPress={() => null}
-            // onPress={() => navigateTo('Community')}
-            >
-            {generateButton('https://img.icons8.com/pastel-glyph/64/000000/groups.png', 'Comunidade', 4)}
-          </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.navBarItems, actualPage == 4 && styles.navBarSelected]}
+          onPress={() => null}
+        // onPress={() => navigateTo('Community')}
+        >
+          {generateButton('https://img.icons8.com/pastel-glyph/64/000000/groups.png', 'Comunidade', 4)}
+        </TouchableOpacity>
 
-          <TouchableOpacity 
-            style={[styles.navBarItems, actualPage == 5 && styles.navBarSelected]}
-            onPress={() => null}
-            // onPress={() => navigateTo('User')}
-            >
-            {generateButton('https://img.icons8.com/windows/64/000000/user.png', 'Usuário', 5)}
-          </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.navBarItems, actualPage == 5 && styles.navBarSelected]}
+          onPress={() => null}
+        // onPress={() => navigateTo('User')}
+        >
+          {generateButton('https://img.icons8.com/windows/64/000000/user.png', 'Usuário', 5)}
+        </TouchableOpacity>
 
-         
+
       </View>
-         
+
 
     </View>
 

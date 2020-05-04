@@ -5,17 +5,19 @@ import { createStackNavigator } from '@react-navigation/stack'
 const AppStack = createStackNavigator()
 
 import Learning from './pages/Learning'
+import Savings from './pages/Savings'
 import { Header } from 'react-native/Libraries/NewAppScreen'
 
 export default function Routes() {
     return (
         <NavigationContainer >
 
-            <AppStack.Navigator screenOptions={{ headerShown: false}}>
+            <AppStack.Navigator screenOptions={{ headerShown: false }}>
                 <AppStack.Screen name='Learning' component={Learning} />
+                <AppStack.Screen name='Savings' component={Savings} />
             </AppStack.Navigator>
 
         </NavigationContainer>
-        
+
     )
 }
