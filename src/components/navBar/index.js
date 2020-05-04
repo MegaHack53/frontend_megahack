@@ -35,6 +35,7 @@ export default function NavBar(props) {
 
       <View style={styles.navBarContent}>
 
+<<<<<<< HEAD
         <TouchableOpacity
           style={[styles.navBarItems, actualPage == 1 && styles.navBarSelected]}
           onPress={() => null}
@@ -74,6 +75,44 @@ export default function NavBar(props) {
         </TouchableOpacity>
 
 
+=======
+          <TouchableOpacity 
+            style={[styles.navBarItems, actualPage == 1 && styles.navBarSelected]}
+            onPress={() => navigateTo('Wallet')}
+            >
+            {generateButton('https://img.icons8.com/carbon-copy/100/000000/initiate-money-transfer.png', 'Carteira', 1)}
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.navBarItems, actualPage == 2 && styles.navBarSelected]}
+            onPress={() => navigateTo('Learning')}
+            >
+            {generateButton('https://img.icons8.com/carbon-copy/100/000000/classroom.png', 'Aprender', 2)}
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.navBarItems, actualPage == 3 && styles.navBarSelected]}
+            onPress={() => navigateTo('Savings')}
+            >
+            {generateButton('https://img.icons8.com/wired/64/000000/love-for-money.png', 'Resumo', 3)}
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.navBarItems, actualPage == 4 && styles.navBarSelected]}
+            onPress={() => navigateTo('Community')}
+            >
+            {generateButton('https://img.icons8.com/pastel-glyph/64/000000/groups.png', 'Comunidade', 4)}
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.navBarItems, actualPage == 5 && styles.navBarSelected]}
+            onPress={() => navigateTo('User')}
+            >
+            {generateButton('https://image.flaticon.com/icons/png/512/2521/2521932.png', 'Usuário', 5)}
+          </TouchableOpacity>
+
+         
+>>>>>>> cdb9ab8fa60eb8b05a2ad152955a8b52295b7b47
       </View>
 
 

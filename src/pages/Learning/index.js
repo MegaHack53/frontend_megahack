@@ -170,7 +170,101 @@ const DataBase = [
             title: 'Pandemia, consumo e trabalho: a realidade já mudou! E você?',
             description: 'A realidade já mudou com a pandemia do coronavírus e todas as transformações que isso causou (e ainda vai causar). E você...',
             url: 'https://dinheirama.com/pandemia-consumo-e-trabalho-a-realidade-ja-mudou-e-voce/'
-        }],
+        },
+        {
+            id: 4,
+            author: 'Conrado Navarro',
+            readtime: '6 min',
+            title: 'Educação financeira: acorde agora e conquiste sua liberdade',
+            description: 'Educação financeira é sinônimo de liberdade, realização de sonhos e amor. Planilha e guardar dinheiro...',
+            url: 'https://dinheirama.com/educacao-financeira-acorde-conquiste-liberdade/'
+        },
+        {
+            id: 5,
+            author: 'CONRADO NAVARRO',
+            readtime: '9 min',
+            title: '5 Hábitos financeiros para mudar sua vida',
+            description: 'Hábitos financeiros são muitas vezes difícies de alcançar. Separamos 5 hábitos práticos e que farão toda a diferença para mudar sua vida...',
+            url: 'https://dinheirama.com/5-habitos-financeiros-mudar-vida/'
+        },
+        {
+            id: 6,
+            author: 'Cristina Pizarro',
+            readtime: '12 min',
+            title: 'Pandemia, consumo e trabalho: a realidade já mudou! E você?',
+            description: 'A realidade já mudou com a pandemia do coronavírus e todas as transformações que isso causou (e ainda vai causar). E você...',
+            url: 'https://dinheirama.com/pandemia-consumo-e-trabalho-a-realidade-ja-mudou-e-voce/'
+        }, {
+            id: 7,
+            author: 'Conrado Navarro',
+            readtime: '6 min',
+            title: 'Educação financeira: acorde agora e conquiste sua liberdade',
+            description: 'Educação financeira é sinônimo de liberdade, realização de sonhos e amor. Planilha e guardar dinheiro...',
+            url: 'https://dinheirama.com/educacao-financeira-acorde-conquiste-liberdade/'
+        },
+        {
+            id: 8,
+            author: 'CONRADO NAVARRO',
+            readtime: '9 min',
+            title: '5 Hábitos financeiros para mudar sua vida',
+            description: 'Hábitos financeiros são muitas vezes difícies de alcançar. Separamos 5 hábitos práticos e que farão toda a diferença para mudar sua vida...',
+            url: 'https://dinheirama.com/5-habitos-financeiros-mudar-vida/'
+        },
+        {
+            id: 9,
+            author: 'Cristina Pizarro',
+            readtime: '12 min',
+            title: 'Pandemia, consumo e trabalho: a realidade já mudou! E você?',
+            description: 'A realidade já mudou com a pandemia do coronavírus e todas as transformações que isso causou (e ainda vai causar). E você...',
+            url: 'https://dinheirama.com/pandemia-consumo-e-trabalho-a-realidade-ja-mudou-e-voce/'
+        }, {
+            id: 10,
+            author: 'Conrado Navarro',
+            readtime: '6 min',
+            title: 'Educação financeira: acorde agora e conquiste sua liberdade',
+            description: 'Educação financeira é sinônimo de liberdade, realização de sonhos e amor. Planilha e guardar dinheiro...',
+            url: 'https://dinheirama.com/educacao-financeira-acorde-conquiste-liberdade/'
+        },
+        {
+            id: 11,
+            author: 'CONRADO NAVARRO',
+            readtime: '9 min',
+            title: '5 Hábitos financeiros para mudar sua vida',
+            description: 'Hábitos financeiros são muitas vezes difícies de alcançar. Separamos 5 hábitos práticos e que farão toda a diferença para mudar sua vida...',
+            url: 'https://dinheirama.com/5-habitos-financeiros-mudar-vida/'
+        },
+        {
+            id: 12,
+            author: 'Cristina Pizarro',
+            readtime: '12 min',
+            title: 'Pandemia, consumo e trabalho: a realidade já mudou! E você?',
+            description: 'A realidade já mudou com a pandemia do coronavírus e todas as transformações que isso causou (e ainda vai causar). E você...',
+            url: 'https://dinheirama.com/pandemia-consumo-e-trabalho-a-realidade-ja-mudou-e-voce/'
+        }, {
+            id: 13,
+            author: 'Conrado Navarro',
+            readtime: '6 min',
+            title: 'Educação financeira: acorde agora e conquiste sua liberdade',
+            description: 'Educação financeira é sinônimo de liberdade, realização de sonhos e amor. Planilha e guardar dinheiro...',
+            url: 'https://dinheirama.com/educacao-financeira-acorde-conquiste-liberdade/'
+        },
+        {
+            id: 14,
+            author: 'CONRADO NAVARRO',
+            readtime: '9 min',
+            title: '5 Hábitos financeiros para mudar sua vida',
+            description: 'Hábitos financeiros são muitas vezes difícies de alcançar. Separamos 5 hábitos práticos e que farão toda a diferença para mudar sua vida...',
+            url: 'https://dinheirama.com/5-habitos-financeiros-mudar-vida/'
+        },
+        {
+            id: 15,
+            author: 'Cristina Pizarro',
+            readtime: '12 min',
+            title: 'Pandemia, consumo e trabalho: a realidade já mudou! E você?',
+            description: 'A realidade já mudou com a pandemia do coronavírus e todas as transformações que isso causou (e ainda vai causar). E você...',
+            url: 'https://dinheirama.com/pandemia-consumo-e-trabalho-a-realidade-ja-mudou-e-voce/'
+        },
+    ],
     // CardsTools
     [
         {
@@ -193,7 +287,92 @@ const DataBase = [
             title: 'Simulador de CDB e Letras de Crédito',
             icon: 'https://img.icons8.com/carbon-copy/100/000000/accounting.png',
             url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/'
-        }],
+        },
+        {
+            id: 4,
+            author: 'MEUS DIVIDENDOS',
+            title: 'Cálculo de Dividendos',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/economic-improvement.png',
+            url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/Mixed'
+        },
+        {
+            id: 5,
+            author: 'MELHOR CÂMBIO',
+            title: 'Conversor de Moedas',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/currency-exchange.png',
+            url: 'https://www.melhorcambio.com/conversor-de-moeda'
+        },
+        {
+            id: 6,
+            author: 'ME POUPE',
+            title: 'Simulador de CDB e Letras de Crédito',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/accounting.png',
+            url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/'
+        },
+        {
+            id: 7,
+            author: 'MEUS DIVIDENDOS',
+            title: 'Cálculo de Dividendos',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/economic-improvement.png',
+            url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/Mixed'
+        },
+        {
+            id: 8,
+            author: 'MELHOR CÂMBIO',
+            title: 'Conversor de Moedas',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/currency-exchange.png',
+            url: 'https://www.melhorcambio.com/conversor-de-moeda'
+        },
+        {
+            id: 9,
+            author: 'ME POUPE',
+            title: 'Simulador de CDB e Letras de Crédito',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/accounting.png',
+            url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/'
+        },
+        {
+            id: 10,
+            author: 'MEUS DIVIDENDOS',
+            title: 'Cálculo de Dividendos',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/economic-improvement.png',
+            url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/Mixed'
+        },
+        {
+            id: 11,
+            author: 'MELHOR CÂMBIO',
+            title: 'Conversor de Moedas',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/currency-exchange.png',
+            url: 'https://www.melhorcambio.com/conversor-de-moeda'
+        },
+        {
+            id: 12,
+            author: 'ME POUPE',
+            title: 'Simulador de CDB e Letras de Crédito',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/accounting.png',
+            url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/'
+        },
+        {
+            id: 13,
+            author: 'MEUS DIVIDENDOS',
+            title: 'Cálculo de Dividendos',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/economic-improvement.png',
+            url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/Mixed'
+        },
+        {
+            id: 14,
+            author: 'MELHOR CÂMBIO',
+            title: 'Conversor de Moedas',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/currency-exchange.png',
+            url: 'https://www.melhorcambio.com/conversor-de-moeda'
+        },
+        {
+            id: 15,
+            author: 'ME POUPE',
+            title: 'Simulador de CDB e Letras de Crédito',
+            icon: 'https://img.icons8.com/carbon-copy/100/000000/accounting.png',
+            url: 'http://mepoupenaweb.uol.com.br/simuladores-online-de-investimentos/simulador-de-investimento/'
+        },
+    ],
 ]
 
 
@@ -206,16 +385,20 @@ export default function Learning() {
             case Tabs[1].title :
                 setActualTab(Tabs[1].title)
                 setDb(DataBase[1])
+                // this.flatListRef.scrollToIndex({animated: true, index: 1});
                 break;
             case Tabs[2].title :
                 setActualTab(Tabs[2].title)
                 setDb(DataBase[2])
+                // this.flatListRef.scrollToIndex({animated: true, index: 1});
                 break;  
             default:
                 setActualTab(Tabs[0].title)
                 setDb(DataBase[0])
+                // this.flatListRef.scrollToIndex({animated: true, index: 1});
         }            
     }
+
 
     function showIcon(card) {
         if (card.icon) {
@@ -266,8 +449,9 @@ export default function Learning() {
                     snapToInterval={405}
                     decelerationRate={"normal"}
                     pagingEnabled
+                    keyExtractor={item => item.id.toString()}   
                     data={db}
-                    keyExtractor={item => item.id.toString()}
+                    extraData={actualTab}
                     renderItem={({ item:card }) => (
                             <View style={styles.card}>
 
