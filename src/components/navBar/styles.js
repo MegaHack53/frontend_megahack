@@ -31,7 +31,7 @@ export default StyleSheet.create({
       width: 90,
       height: 90,
       borderRadius: 90/2,
-      backgroundColor: '#305F72DD',
+      backgroundColor: '#305F72CC',
       
       alignItems: 'center',
       justifyContent: 'center'
@@ -55,6 +55,6 @@ export default StyleSheet.create({
         fontFamily: 'Roboto',
         fontSize: 12,
         textAlign: 'center',
-        color: '#FFF',
+        color: '#012940',
     },
 })

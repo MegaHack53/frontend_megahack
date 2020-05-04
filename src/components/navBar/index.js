@@ -51,7 +51,7 @@ export default function NavBar(props) {
 
           <TouchableOpacity 
             style={[styles.navBarItems, actualPage == 3 && styles.navBarSelected]}
-            onPress={() => navigateTo('Home')}
+            onPress={() => navigateTo('Savings')}
             >
             {generateButton('https://img.icons8.com/wired/64/000000/love-for-money.png', 'Resumo', 3)}
           </TouchableOpacity>
@@ -67,7 +67,7 @@ export default function NavBar(props) {
             style={[styles.navBarItems, actualPage == 5 && styles.navBarSelected]}
             onPress={() => navigateTo('User')}
             >
-            {generateButton('https://img.icons8.com/windows/64/000000/user.png', 'Usuário', 5)}
+            {generateButton('https://image.flaticon.com/icons/png/512/2521/2521932.png', 'Usuário', 5)}
           </TouchableOpacity>
 
          

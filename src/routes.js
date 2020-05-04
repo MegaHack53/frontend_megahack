@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 const AppStack = createStackNavigator()
 
-import Home from './pages/Home'
+import Savings from './pages/Home'
 import Learning from './pages/Learning'
 import Community from './pages/Community'
 import Wallet from './pages/Wallet'
@@ -22,7 +22,7 @@ export default function Routes() {
         <NavigationContainer >
 
             <AppStack.Navigator screenOptions={{ headerShown: false}}>
-                <AppStack.Screen name='Home' component={Home} />
+                <AppStack.Screen name='Savings' component={Savings} />
                 <AppStack.Screen name='Learning' component={Learning} />
                 <AppStack.Screen name='Community' component={Community} />
                 <AppStack.Screen name='User' component={User} />
