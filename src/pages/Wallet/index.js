@@ -12,61 +12,60 @@ import ProgressCircle from "react-native-progress-circle";
 import NavBar from "../../components/navBar";
 import styles from "./styles";
 
-import api from '../../services/api'
+import api from "../../services/api";
 
 // import { Dimensions } from "react-native";
 // const screenWidth = Dimensions.get("window").width;
 
 const transacoes = {
-  "transactions": [
+  transactions: [
     {
-      "id": "5eb0406184365d002198305f",
-      "category": "mall",
-      "description": "Clothes",
-      "value": 230,
-      "type": "outcome",
-      "createdAt": "2020-05-04T16:18:41.889Z"
+      id: "5eb0406184365d002198305f",
+      category: "mall",
+      description: "Clothes",
+      value: 230,
+      type: "outcome",
+      createdAt: "2020-05-04T16:18:41.889Z",
     },
     {
-      "id": "5eb0406d84365d0021983060",
-      "category": "job",
-      "description": "Bonus",
-      "value": 450,
-      "type": "income",
-      "createdAt": "2020-05-04T16:18:53.927Z"
+      id: "5eb0406d84365d0021983060",
+      category: "job",
+      description: "Bonus",
+      value: 450,
+      type: "income",
+      createdAt: "2020-05-04T16:18:53.927Z",
     },
     {
-      "id": "5eb0407c84365d0021983061",
-      "category": "food",
-      "description": "using delivery service",
-      "value": 500,
-      "type": "outcome",
-      "createdAt": "2020-05-04T16:19:08.090Z"
+      id: "5eb0407c84365d0021983061",
+      category: "food",
+      description: "using delivery service",
+      value: 500,
+      type: "outcome",
+      createdAt: "2020-05-04T16:19:08.090Z",
     },
     {
-      "id": "5eb0408684365d0021983062",
-      "category": "transport",
-      "description": "Bus",
-      "value": 50,
-      "type": "outcome",
-      "createdAt": "2020-05-04T16:19:18.084Z"
+      id: "5eb0408684365d0021983062",
+      category: "transport",
+      description: "Bus",
+      value: 50,
+      type: "outcome",
+      createdAt: "2020-05-04T16:19:18.084Z",
     },
     {
-      "id": "5eb0409484365d0021983063",
-      "category": "food",
-      "description": "using delivery service",
-      "value": 500,
-      "type": "outcome",
-      "createdAt": "2020-05-04T16:19:32.600Z"
-    }
+      id: "5eb0409484365d0021983063",
+      category: "food",
+      description: "using delivery service",
+      value: 500,
+      type: "outcome",
+      createdAt: "2020-05-04T16:19:32.600Z",
+    },
   ],
-  "balance": {
-    "income": 450,
-    "outcome": 1280,
-    "total": -830
-  }
-}
-
+  balance: {
+    income: 450,
+    outcome: 1280,
+    total: -830,
+  },
+};
 
 function makeChart(data, label, color = "rgb(134, 65, 244)") {
   return (
@@ -81,35 +80,34 @@ function makeChart(data, label, color = "rgb(134, 65, 244)") {
 
 export default function Wallet() {
   const [keyboard, setKeyboard] = useState(false);
-  
+
   const [collapseHeight] = useState(350);
   const [inputCollapse, setInputCollapse] = useState(false);
   const [expensesCollapse, setExpensesCollapse] = useState(false);
   const [dropdown, setDropDown] = useState("");
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
-  
-  const [loading, setLoading] = useState(false)
-  const [transactions, setTransactions] = useState([])
-  const [categories, setCategories] = useState([])
-  const [categoriesValues, setCategoriesValues] = useState([])
-  const [outcomeTotal, setOutcomeTotal] = useState(0)
 
-  
-const category = {
-  catOne: {
-    progress: 40,
-    label: "Alimentação",
-  },
-  catTwo: {
-    progress: 30,
-    label: "Lazer",
-  },
-  catThree: {
-    progress: 10,
-    label: "Transporte",
-  },
-};
+  const [loading, setLoading] = useState(false);
+  const [transactions, setTransactions] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [categoriesValues, setCategoriesValues] = useState([]);
+  const [outcomeTotal, setOutcomeTotal] = useState(0);
+
+  const category = {
+    catOne: {
+      progress: 40,
+      label: "Alimentação",
+    },
+    catTwo: {
+      progress: 30,
+      label: "Lazer",
+    },
+    catThree: {
+      progress: 10,
+      label: "Transporte",
+    },
+  };
 
   async function loadData() {
     if (loading) {
@@ -118,40 +116,55 @@ const category = {
 
     setLoading(true);
 
-    const response = await api.get(`/transactions`)
-      .catch(function(error) {
-        console.log('There has been a problem with your get operation: ' + error.message);
-          // throw error;
-        });
-    setTransactions([...response.data])
-    setOutcomeTotal([...response.data.balance.income])
+    const response = await api.get(`/transactions`).catch(function (error) {
+      console.log(
+        "There has been a problem with your get operation: " + error.message
+      );
+      // throw error;
+    });
+    setTransactions([...response.data]);
+    setOutcomeTotal([...response.data.balance.income]);
 
-
-    const responseCat = await api.get(`/transactions/categories`)
-      .catch(function(error) {
-        console.log('There has been a problem with your get operation: ' + error.message);
-          // throw error;
-        });
-    setCategories([...responseCat.data])
-    
-    
-    const responseCatOne = await api.get(`/transactions/mall`)
-    .catch(function(error) {
-      console.log('There has been a problem with your get operation: ' + error.message);
+    const responseCat = await api
+      .get(`/transactions/categories`)
+      .catch(function (error) {
+        console.log(
+          "There has been a problem with your get operation: " + error.message
+        );
         // throw error;
       });
-      const responseCatTwo = await api.get(`/transactions/food`)
-      .catch(function(error) {
-        console.log('There has been a problem with your get operation: ' + error.message);
-          // throw error;
-        });
-        const responseCatThree = await api.get(`/transactions/transport`)
-      .catch(function(error) {
-        console.log('There has been a problem with your get operation: ' + error.message);
-          // throw error;
-        });
+    setCategories([...responseCat.data]);
 
-        setCategoriesValues([[...responseCatOne.data.balance.income],[...responseCatTwo.data.balance.income],[...responseCatThree.data.balance.income]])
+    const responseCatOne = await api
+      .get(`/transactions/mall`)
+      .catch(function (error) {
+        console.log(
+          "There has been a problem with your get operation: " + error.message
+        );
+        // throw error;
+      });
+    const responseCatTwo = await api
+      .get(`/transactions/food`)
+      .catch(function (error) {
+        console.log(
+          "There has been a problem with your get operation: " + error.message
+        );
+        // throw error;
+      });
+    const responseCatThree = await api
+      .get(`/transactions/transport`)
+      .catch(function (error) {
+        console.log(
+          "There has been a problem with your get operation: " + error.message
+        );
+        // throw error;
+      });
+
+    setCategoriesValues([
+      [...responseCatOne.data.balance.income],
+      [...responseCatTwo.data.balance.income],
+      [...responseCatThree.data.balance.income],
+    ]);
     setLoading(false);
   }
 
@@ -167,10 +180,9 @@ const category = {
       () => {
         setKeyboard(false);
       }
-      
     );
 
-    loadData()
+    loadData();
 
     return () => {
       keyboardDidHideListener.remove();
@@ -207,7 +219,11 @@ const category = {
         <View
           style={[styles.inputs, !inputCollapse ? { display: "none" } : {}]}
         >
-          <Dropdown label="Categoria" data={categories} onChangeText={(value) => setDropDown(value)}/>
+          <Dropdown
+            label="Categoria"
+            data={categories}
+            onChangeText={(value) => setDropDown(value)}
+          />
           <TextInput
             style={styles.textInput}
             onChangeText={(text) => setDescription(text.toString())}
@@ -224,17 +240,21 @@ const category = {
             keyboardType={"numeric"}
           />
           <View style={styles.inputButtonFrame}>
-            <TouchableOpacity style={styles.inputButton} onPress={() => {api.post('/transactions', {
-               category: dropdown,
-               description: description,
-               value: value,
-               type: "income"
-              })
-              setInputCollapse(false);
-              setExpensesCollapse(false)
-              setDescription("");
-              setValue("");
-              }}>
+            <TouchableOpacity
+              style={styles.inputButton}
+              onPress={() => {
+                api.post("/transactions", {
+                  category: dropdown,
+                  description: description,
+                  value: value,
+                  type: "income",
+                });
+                setInputCollapse(false);
+                setExpensesCollapse(false);
+                setDescription("");
+                setValue("");
+              }}
+            >
               <Text style={styles.inputButtonText}>Salvar</Text>
             </TouchableOpacity>
           </View>
@@ -264,7 +284,11 @@ const category = {
         <View
           style={[styles.inputs, !expensesCollapse ? { display: "none" } : {}]}
         >
-          <Dropdown label="Categoria" data={categories} onChangeText={(value) => setDropDown(value)}/>
+          <Dropdown
+            label="Categoria"
+            data={categories}
+            onChangeText={(value) => setDropDown(value)}
+          />
           <TextInput
             style={styles.textInput}
             onChangeText={(text) => setDescription(text.toString())}
@@ -281,17 +305,21 @@ const category = {
             keyboardType={"numeric"}
           />
           <View style={styles.inputButtonFrame}>
-            <TouchableOpacity style={styles.inputButton} onPress={() => {api.post('/transactions', {
-               category: dropdown,
-               description: description,
-               value: value,
-               type: "outcome"
-              })
-              setInputCollapse(false);
-              setExpensesCollapse(false)
-              setDescription("");
-              setValue("");
-              }}>
+            <TouchableOpacity
+              style={styles.inputButton}
+              onPress={() => {
+                api.post("/transactions", {
+                  category: dropdown,
+                  description: description,
+                  value: value,
+                  type: "outcome",
+                });
+                setInputCollapse(false);
+                setExpensesCollapse(false);
+                setDescription("");
+                setValue("");
+              }}
+            >
               <Text style={styles.inputButtonText}>Salvar</Text>
             </TouchableOpacity>
           </View>
@@ -302,22 +330,14 @@ const category = {
         <Text style={styles.chartTitle}>Gastos por Categoria</Text>
 
         <View style={styles.chartsContainer}>
-          {makeChart(
-            Math.round((1807.4/3500)*100),
-            'Shopping',
-            "#6a3093"
-          )}
+          {makeChart(Math.round((1807.4 / 3500) * 100), "Shopping", "#6a3093")}
 
           {makeChart(
-            Math.round((1000.1/3500)*100),
-            'Alimentação',
+            Math.round((1000.1 / 3500) * 100),
+            "Alimentação",
             "#c02425"
           )}
-          {makeChart(
-            Math.round((200.1/3500)*100),
-            'Transporte',
-            "#ffb75e"
-          )}
+          {makeChart(Math.round((200.1 / 3500) * 100), "Transporte", "#ffb75e")}
         </View>
       </View>
 

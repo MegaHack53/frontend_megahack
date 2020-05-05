@@ -1,8 +1,16 @@
-import React from 'react';
-import { View } from 'react-native';
-import { Feather } from '@expo/vector-icons';
+import React from "react";
+import { View } from "react-native";
+import { Feather } from "@expo/vector-icons";
 
-import { Container, Title, TitleContent, TitleText, TitleTimeStamp, Value, ValueText } from './styles';
+import {
+  Container,
+  Title,
+  TitleContent,
+  TitleText,
+  TitleTimeStamp,
+  Value,
+  ValueText,
+} from "./styles";
 
 export default function Activity({ data }) {
   return (

@@ -9,12 +9,11 @@ export default StyleSheet.create({
   },
 
   header: {
-    top: "45%",
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 15,
   },
-  
+
   navBar: {
     position: "absolute",
     left: 0,

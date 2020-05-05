@@ -47,44 +47,42 @@ export default StyleSheet.create({
   },
 
   headerPicture: {
-    top: '40%',
-    alignSelf: 'center'
+    top: "40%",
+    alignSelf: "center",
   },
 
   headerUserImg: {
     height: 100,
     width: 100,
-    borderRadius: 100/2,
-
+    borderRadius: 100 / 2,
   },
-  
+
   optionsContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     padding: 10,
     marginBottom: 10,
 
-    borderStyle: 'solid',
-    borderColor: '#568EA633',
+    borderStyle: "solid",
+    borderColor: "#568EA633",
     borderBottomWidth: 1,
-
   },
 
   userOptions: {
-    top: '15%',   
+    top: "15%",
   },
-  
-  optionsIconFrame: {
-      width: 50,
-      height: 50,
-      borderRadius: 50/2,
-      backgroundColor: '#305F7233',
 
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginRight: 20
+  optionsIconFrame: {
+    width: 50,
+    height: 50,
+    borderRadius: 50 / 2,
+    backgroundColor: "#305F7233",
+
+    justifyContent: "center",
+    alignItems: "center",
+    marginRight: 20,
   },
-  
+
   optionsIcon: {
     height: 35,
     width: 35,
@@ -92,7 +90,7 @@ export default StyleSheet.create({
 
   optionsText: {
     fontFamily: "Roboto",
-    fontWeight: '300',
+    fontWeight: "300",
     fontSize: 24,
     color: "#012940",
   },

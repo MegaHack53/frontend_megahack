@@ -6,9 +6,8 @@ export default StyleSheet.create({
     flex: 1,
     paddingHorizontal: 24,
     paddingTop: Constants.statusBarHeight + 20,
-    justifyContent: 'space-between',
-    // justifyContent: 'space-around',
-    paddingBottom: '15%',
+    justifyContent: "space-between",
+    paddingBottom: "15%",
   },
 
   header: {
@@ -16,11 +15,11 @@ export default StyleSheet.create({
     alignItems: "center",
     marginBottom: 15,
   },
-  
+
   headerText: {
-    fontFamily: 'Roboto',
+    fontFamily: "Roboto",
     fontSize: 32,
-    color: '#012940',
+    color: "#012940",
   },
 
   incomeCollapse: {
@@ -28,9 +27,9 @@ export default StyleSheet.create({
     height: 350,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#219653',
+    borderColor: "#219653",
 
-    alignSelf: 'center',
+    alignSelf: "center",
   },
 
   expensesCollapse: {
@@ -38,10 +37,10 @@ export default StyleSheet.create({
     height: 350,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#EB5757',
+    borderColor: "#EB5757",
 
-    alignSelf: 'center',
-    marginTop: 20
+    alignSelf: "center",
+    marginTop: 20,
   },
 
   inputs: {
@@ -50,7 +49,7 @@ export default StyleSheet.create({
 
   textInput: {
     height: 50,
-    borderColor: '#AAA',
+    borderColor: "#AAA",
     borderBottomWidth: 1,
     marginTop: 10,
     fontSize: 16,
@@ -58,78 +57,73 @@ export default StyleSheet.create({
 
   inputButtonFrame: {
     marginTop: 15,
-    alignItems: 'flex-end'
+    alignItems: "flex-end",
   },
 
   inputButton: {
     paddingHorizontal: 10,
     borderWidth: 1,
-    borderColor: '#000',
+    borderColor: "#000",
     borderRadius: 12,
   },
 
   inputButtonText: {
-    fontFamily: 'Roboto',
+    fontFamily: "Roboto",
     fontSize: 16,
-    color: '#012940',
-    fontWeight: '300',
+    color: "#012940",
+    fontWeight: "300",
     padding: 10,
 
-    alignSelf: 'center',
+    alignSelf: "center",
   },
 
   incomeContainer: {
     width: 350,
     height: 80,
     borderRadius: 12,
-    backgroundColor: '#219653',
+    backgroundColor: "#219653",
 
-    alignSelf: 'center',
-    justifyContent: 'center',
-    
+    alignSelf: "center",
+    justifyContent: "center",
   },
-
-  
 
   expensesContainer: {
     width: 350,
     height: 80,
     borderRadius: 12,
-    backgroundColor: '#EB5757',
+    backgroundColor: "#EB5757",
 
-    alignSelf: 'center',
-    justifyContent: 'center',
-    
+    alignSelf: "center",
+    justifyContent: "center",
   },
 
-
   walletBtn: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     padding: 10,
     marginBottom: 10,
   },
-  
+
   walletText: {
-    fontFamily: 'Roboto',
+    fontFamily: "Roboto",
     fontSize: 32,
-    color: '#FFF',
-    fontWeight: '300',
+    color: "#FFF",
+    fontWeight: "300",
   },
 
   category: {
-    alignItems: 'center',
+    alignItems: "center",
   },
-  
+
   categoryCharts: {
     height: 250,
-    justifyContent: 'center',
-    backgroundColor: '#DFDEE633',
+    justifyContent: "center",
+    backgroundColor: "#DFDEE633",
     borderRadius: 12,
     shadowColor: "#000",
     shadowOffset: {
-        width: 0,
-        height: 4,
+      width: 0,
+      height: 4,
     },
     shadowOpacity: 0.32,
     shadowRadius: 5.46,
@@ -137,38 +131,38 @@ export default StyleSheet.create({
   },
 
   chartsContainer: {
-    flexDirection:'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     padding: 20,
   },
 
   chartTitle: {
-    fontFamily: 'Roboto',
+    fontFamily: "Roboto",
     fontSize: 24,
-    color: '#012940',
-    fontWeight: '300',
+    color: "#012940",
+    fontWeight: "300",
     padding: 10,
 
-    alignSelf: 'center',
+    alignSelf: "center",
   },
 
   chartText: {
-    fontFamily: 'Roboto',
+    fontFamily: "Roboto",
     fontSize: 16,
-    color: '#012940',
-    fontWeight: '300',
+    color: "#012940",
+    fontWeight: "300",
 
-    alignSelf: 'center',
-    padding: 10
+    alignSelf: "center",
+    padding: 10,
   },
 
   chartLabel: {
-    fontFamily: 'Roboto',
+    fontFamily: "Roboto",
     fontSize: 16,
-    color: '#012940',
-    fontWeight: '300',
+    color: "#012940",
+    fontWeight: "300",
 
-    alignSelf: 'center',
+    alignSelf: "center",
   },
 
   navBar: {

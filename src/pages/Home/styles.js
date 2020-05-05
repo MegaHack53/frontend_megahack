@@ -1,9 +1,9 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 export const Container = styled.SafeAreaView`
   flex: 1;
   padding: 0 24px;
-  background-color: #FFF;
+  background-color: #fff;
   padding-top: 20px;
 `;
 
@@ -16,13 +16,13 @@ export const Header = styled.View`
 export const HeaderText = styled.Text`
   font-family: "Roboto";
   font-size: 16px;
-  color: #CFD8DC;
+  color: #cfd8dc;
 `;
 
 export const HeaderTextTotal = styled.Text`
   font-family: "Roboto";
   font-size: 28px;
-  color: #305F72;
+  color: #305f72;
 `;
 
 export const CardContainer = styled.ScrollView`
@@ -36,34 +36,30 @@ export const Card = styled.View`
   height: 110px;
   padding: 12px;
   margin-right: 8px;
-  background: ${props => props.background};
+  background: ${(props) => props.background};
   border-radius: 12px;
 `;
 
 export const CardCategory = styled.Text`
   font-size: 18px;
-  color: #DFDEE6;
+  color: #dfdee6;
 `;
 
 export const CardValue = styled.Text`
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
 `;
 
 export const CardPercentage = styled.Text`
-margin-top: 8px;
+  margin-top: 8px;
   font-size: 15px;
-  color: #DFDEE6;
+  color: #dfdee6;
 `;
 
-export const RecentActivities = styled.View`
-`;
+export const RecentActivities = styled.View``;
 
-export const RecentActivitiesTitle = styled.Text`
-`;
+export const RecentActivitiesTitle = styled.Text``;
 
-export const ListActivities = styled.FlatList`
-`;
+export const ListActivities = styled.FlatList``;
 
-export const NavBar = styled.FlatList`
-`;
+export const NavBar = styled.FlatList``;

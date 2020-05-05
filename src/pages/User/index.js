@@ -51,14 +51,16 @@ export default function Learning() {
 
       <View style={styles.headerContent}>
         <View style={styles.headerIcons}>
-        <TouchableOpacity
-          style={styles.optionsContainer}
-          onPress={() => null}>
+          <TouchableOpacity
+            style={styles.optionsContainer}
+            onPress={() => null}
+          >
             <Feather name="log-out" size={30} color="#012940" />
           </TouchableOpacity>
           <TouchableOpacity
-          style={styles.optionsContainer}
-          onPress={() => navigateTo('Savings')}>
+            style={styles.optionsContainer}
+            onPress={() => navigateTo("Savings")}
+          >
             <Feather name="x-circle" size={30} color="#012940" />
           </TouchableOpacity>
         </View>
