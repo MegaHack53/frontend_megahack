@@ -7,7 +7,7 @@
   Megahack Team 53 - Mobile :computer:
 </h1>
 
-<p align="center">This project serves is designed to work with the <a href="https://github.com/MegaHack53/backend_megahack">Team 53 REST API</a>.</p>
+<p align="center">This project is designed to work with the <a href="https://github.com/MegaHack53/backend_megahack">Team 53 REST API</a>.</p>
 
 <p align="center">
   <a href="https://github.com/RenatoXT">
@@ -18,6 +18,10 @@
   </a>
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 </p>
+
+<p align="justify">
+  This project is based in the MegaHack competition, as a solution to the Flourish Savings Challenge.  We developed the app KIPcash, we bet in this solution for beginners when the subject is managing personal finances. Applying features for learning, expences, community and challenges.
+ </p>
 
 ## Built With
 
