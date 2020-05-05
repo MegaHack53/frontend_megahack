@@ -58,7 +58,7 @@ export default function Learning() {
           </TouchableOpacity>
           <TouchableOpacity
           style={styles.optionsContainer}
-          onPress={() => navigateTo('Home')}>
+          onPress={() => navigateTo('Savings')}>
             <Feather name="x-circle" size={30} color="#012940" />
           </TouchableOpacity>
         </View>
