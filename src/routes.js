@@ -21,7 +21,7 @@ export default function Routes() {
     return (
         <NavigationContainer >
 
-            <AppStack.Navigator screenOptions={{ headerShown: false}}>
+            <AppStack.Navigator screenOptions={{ headerShown: false }}>
                 <AppStack.Screen name='Savings' component={Savings} />
                 <AppStack.Screen name='Learning' component={Learning} />
                 <AppStack.Screen name='Community' component={Community} />
@@ -35,6 +35,6 @@ export default function Routes() {
             </AppStack.Navigator>
 
         </NavigationContainer>
-        
+
     )
 }
